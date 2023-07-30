@@ -13,7 +13,10 @@ function App() {
         <h1></h1>
 
         {/* Add another Link component to our navbar which navigates to the "/" route. */}
-        <div id="navbar">{/* navigation here */}</div>
+        <div id="navbar">
+          {/* navigation here: Ask mentor for this part.... */}
+          <button onClick={() => navigate()}></button>
+        </div>
 
         {/* replace it with the Routes component */}
         <div id="main-section">
