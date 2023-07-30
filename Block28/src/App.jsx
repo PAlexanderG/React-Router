@@ -14,6 +14,8 @@ function App() {
 
         {/* Add another Link component to our navbar which navigates to the "/" route. */}
         <div id="navbar">
+          <Link to="/Blue">Home</Link>
+          {}
           {/* navigation here: Ask mentor for this part.... */}
           <button onClick={() => navigate()}></button>
         </div>
@@ -21,9 +23,12 @@ function App() {
         {/* replace it with the Routes component */}
         <div id="main-section">
           <Routes>
-            <Route path="/home" element={<h1>Home</h1>}></Route>
+            <Route path="/home" element={<h1>Home</h1>} />
             <Route path="/blue" element={<h1>Blue</h1>} />
             <Route path="/red" element={<h1>Red</h1>} />
+          </Routes>
+          <Routes>
+            <Route path="routes" element={<h1>Footer</h1>} />
           </Routes>
         </div>
       </div>
