@@ -27,7 +27,7 @@ function App() {
 
           {}
           {/* navigation here: Ask mentor for this part.... */}
-          <button onClick={() => navigate()}></button>
+          {/* <button onClick={() => navigate()}></button> */}
         </div>
 
         {/* replace it with the Routes component */}

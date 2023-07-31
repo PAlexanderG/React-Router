@@ -36,7 +36,7 @@ body > div {
 }
 
 .red {
-  background-color: #b05f6d;
+  background-color: #fc2d50;
   color: white;
 }
 
@@ -44,8 +44,8 @@ body > div {
   background-color: #275db3;
   color: white;
 }
-.main-section {
-  background-color: #b05f6d;
+.home {
+  background-color: #bd3be8;
 }
 .green {
   background-color: #27b337;
