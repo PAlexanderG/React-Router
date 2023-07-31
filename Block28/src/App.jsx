@@ -3,10 +3,12 @@ import { BrowserRouter, useNavigate } from "react-router-dom";
 import { Routes, Route, Link } from "react-router-dom";
 import "./components/Blue.jsx";
 import "./components/Red.jsx";
+import "./components/Home";
 
 function App() {
   const navigate = useNavigate();
-
+  // const router = createBrowserRouter; (ask for this....)
+  // const [token, setToken] = useState(null); same....
   return (
     <>
       <div id="container">

@@ -4,6 +4,7 @@ import { useState } from "react";
 // with the className set to its respective colors
 
 export default function Red() {
+  const [state, setState] = useState(initialState);
   return (
     <div className="red">
       <h1>RED</h1>
