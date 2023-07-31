@@ -38,12 +38,13 @@ function App() {
             <Route path="/red" element={<Red />} />
             <Route path="/green" element={<Green />} />
           </Routes>
-          <div>
-            <Link to="/green">Green</Link>
-          </div>
+
           {/* <Routes>
             <Route path="/routes" element={<h1>Footer</h1>} />
           </Routes> */}
+        </div>
+        <div>
+          <Link to="/green">Green</Link>
         </div>
       </div>
     </>
