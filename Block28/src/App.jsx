@@ -1,12 +1,15 @@
 import "./index.css";
 import { BrowserRouter, useNavigate } from "react-router-dom";
 import { Routes, Route, Link } from "react-router-dom";
-import "./components/Blue";
-import "./components/Red";
-import "./components/Home";
+import Blue from "./components/Blue";
+import Red from "./components/Red";
+import Home from "./components/Home";
+import Green from "./components/Green";
+import { useState } from "react";
 
 function App() {
   const navigate = useNavigate();
+  // const [state, setState] = useState(initialState);
 
   // (ask for this....)
   // const routerBrowser = createBrowserRouter("");
@@ -21,6 +24,7 @@ function App() {
           <Link to="/blue">Blue</Link>
           <Link to="/red">Red</Link>
           <Link to="/home">Home</Link>
+
           {}
           {/* navigation here: Ask mentor for this part.... */}
           <button onClick={() => navigate()}></button>
@@ -29,13 +33,17 @@ function App() {
         {/* replace it with the Routes component */}
         <div id="main-section">
           <Routes>
-            <Route path="/home" element={<h1>Home</h1>} />
-            <Route path="/Blue" element={<h1>Blue</h1>} />
-            <Route path="/red" element={<h1>Red</h1>} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/blue" element={<Blue />} />
+            <Route path="/red" element={<Red />} />
+            <Route path="/green" element={<Green />} />
           </Routes>
-          <Routes>
+          <div>
+            <Link to="/green">Green</Link>
+          </div>
+          {/* <Routes>
             <Route path="/routes" element={<h1>Footer</h1>} />
-          </Routes>
+          </Routes> */}
         </div>
       </div>
     </>

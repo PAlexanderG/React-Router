@@ -3,11 +3,11 @@ import { useState } from "react";
 // Create a component which returns a div
 // with the className set to its respective colors
 
-export default function Red() {
+export default function Green() {
   // const [state, setState] = useState(initialState);
   return (
-    <div className="red">
-      <h1>RED</h1>
+    <div className="green">
+      <h1>GREEN</h1>
     </div>
   );
 }
