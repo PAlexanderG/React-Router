@@ -6,7 +6,7 @@ export default function App() {
   const [state, setState] = useState(initialState);
   return (
     <div className="home">
-      <h1>Home</h1>
+      <h1>Blue</h1>
     </div>
   );
 }

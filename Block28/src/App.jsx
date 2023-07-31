@@ -1,4 +1,4 @@
-import "./App.css";
+import "./index.css";
 import { BrowserRouter, useNavigate } from "react-router-dom";
 import { Routes, Route, Link } from "react-router-dom";
 import "./components/Blue";
@@ -18,9 +18,9 @@ function App() {
 
         {/* Add another Link component to our navbar which navigates to the "/" route. */}
         <div id="navbar">
-          <Link to="/Blue">Blue</Link>
-          <Link to="/Red">Red</Link>
-          <Link to="/Home">Home</Link>
+          <Link to="/blue">Blue</Link>
+          <Link to="/red">Red</Link>
+          <Link to="/home">Home</Link>
           {}
           {/* navigation here: Ask mentor for this part.... */}
           <button onClick={() => navigate()}></button>
