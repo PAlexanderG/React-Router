@@ -1,3 +1,7 @@
+// import the Routes and Routes components from React Router import
+// { Routes, Route } from "react-router-dom";
+// Add the Link component to the 'react-router-dom' import statement object
+
 import "./index.css";
 import { BrowserRouter, useNavigate } from "react-router-dom";
 import { Routes, Route, Link } from "react-router-dom";
@@ -9,11 +13,9 @@ import { useState } from "react";
 
 function App() {
   const navigate = useNavigate();
-  // const [state, setState] = useState(initialState);
+  //  Remove the { } from within the "main-container"
+  // div and replace it with the Routes component.
 
-  // (ask for this....)
-  // const routerBrowser = createBrowserRouter("");
-  // const Browser = useBroserRouter same....?
   return (
     <>
       <div id="container">
@@ -22,15 +24,17 @@ function App() {
         {/* Add another Link component to our navbar which navigates to the "/" route. */}
         <div id="navbar">
           <Link to="/blue">Blue</Link>
-          <Link to="/red">Red</Link>
           <Link to="/home">Home</Link>
-
+          <Link to="/red">Red</Link>
           {}
           {/* navigation here: Ask mentor for this part.... */}
           {/* <button onClick={() => navigate()}></button> */}
         </div>
 
         {/* replace it with the Routes component */}
+        {/* Add an element property in the main-section to each 
+        Route tag and pass them as a Funcion from the import for each component ex:
+        <Route path="/home" element={<Home />} />*/}
         <div id="main-section">
           <Routes>
             <Route path="/home" element={<Home />} />
